@@ -34,7 +34,6 @@ categoryName = previewBox.querySelector(".title p"),
 previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
 shadow = document.querySelector(".shadow");
-var x = document.getElementById("#atq");
 //in the bottom function i have to add another function for add to quote see the website for ref
 
 function preview(element){
@@ -57,3 +56,30 @@ function preview(element){
 
   if (x.style.display == "none"){x.style.display = "block";}else{x.style.display = "none";}
 }
+
+//Parameter List
+addItemId=0;
+function addToCart(item){
+  addItemId+=1;
+  var selectedItem =document.createElement('div');
+  selectedItem.setAttribute('id',addItemId);
+  var title=document.createElement('div');
+  title.innerText=item.getAttribute('data-name');
+  var delBtn = document.createElement('button');
+  delBtn.innerHTML='Remove';
+  delBtn.setAttribute('onclick','del('+addItemId+')');
+  var cartItems=document.getElementById('title');
+  selectedItem.append(title);
+  selectedItem.append(delBtn);
+  cartItems.append(selectedItem);
+}
+
+function del(item){
+  document.getElementById(item).remove();
+}
+
+// function addToCart(obj){
+//   var product_id=obj.getAttribute('data-uid');
+//   var product_name=obj.getAttribute('data-name');
+//   console.log(product_id,product_name);
+// }
