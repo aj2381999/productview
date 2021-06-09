@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Coding By Ajay.K  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNU CORPORATE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+        <h2>SUNU CORPORATE<br/></h2><small>Smart Solutions for Smart Cities <br/></small><h3>Select Desired Parameter For Your Organization<br/></h3>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+
+        <!-- <span class="item active" data-name="all">All</span> -->
+        
+        <span class="item active" data-content="Hardware">Hardware</span>
+        
+        <span class="item" data-content="Orientation">Orientation</span>
+       
+        <span class="item" data-content="Interaction Mode">Interaction Mode</span>
+       
+        <span class="item" data-content="Location">Location</span>
+       
+      </div>
+    </nav>
+
+    <!-- filter Images -->
+    <div class="gallery">
+      
+      <div class="image" data-name="Hardware" data-content="Hardware Description"><span><img src="images/bag-1.jpg" alt=""></span><div class="text-center" data-uid="1" data-name="Hardware" onclick="addToCart(this);" class="cart">Quote In</div></div>
+      
+      <div class="image" data-name="Orientation" data-content="Orientation1 Description"><span><img src="images/shoe-1.jpg" alt=""></span><div class="text-center" data-uid="2" data-name="Orientation1" onclick="addToCart(this);" class="cart">Quote In</div></div>
+
+      <div class="image" data-name="Orientation" data-content="Orientation2 Description"><span><img src="images/shoe-2.jpg" alt=""></span><div class="text-center" data-uid="3" data-name="Orientation2" onclick="addToCart(this);" class="cart">Quote In</div></div>
+      
+      <div class="image" data-name="Interaction Mode" data-content="Interaction Mode1 Description"><span><img src="images/camera-1.jpg" alt=""></span><div class="text-center" data-uid="4" data-name="Interaction Mode1" onclick="addToCart(this);" class="cart">Quote In</div></div>
+      
+      <div class="image" data-name="Interaction Mode" data-content="Interaction Mode2 Description"><span><img src="images/camera-2.jpg" alt=""></span><div class="text-center" data-uid="5" data-name="Interaction Mode2" onclick="addToCart(this);" class="cart">Quote In</div></div>
+      
+      <div class="image" data-name="Location" data-content="Location1 Description"><span><img src="images/headphone-2.jpg" alt=""></span><div class="text-center" data-uid="6" data-name="Location1" onclick="addToCart(this);" class="cart">Quote In</div></div>
+
+      <div class="image" data-name="Location" data-content="Location2 Description"><span><img src="images/headphone-1.jpg" alt=""></span><div class="text-center" data-uid="7" data-name="Location2" onclick="addToCart(this);" class="cart">Quote In</div></div>
+
+    </div>
+  </div>
+
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Description: <p></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+
+  <!-- Cart -->
+  <div class="cart" id="cart">
+  <div class="htitle">Parameter's List</div><hr/>
+  <div id="title"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
