@@ -13,6 +13,10 @@ body{
   padding: 10px;
 }
 
+.row{
+  text-align: center;
+}
+
 .wrapper{
   margin: 100px auto;
   max-width: 1100px;
@@ -83,6 +87,14 @@ body{
 .gallery .image .text-center{
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.gallery .image .text-center:hover{
+  color: #fff;
+  background: #007bff;
 }
 
 .preview-box{
@@ -183,13 +195,36 @@ body{
 }
 
 .cart{
-  width: 600px;
-  text-align: center;
-  border: 1px solid #007bff;
-  overflow-y: scroll;
-  height: 100%;
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #007bff;
+  border-radius: 50px;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease;
 }
 
-.cartImg > img{
-  width: 200px;
+.cart:hover{
+  color: #fff;
+  background: #007bff;
+}
+
+.htitle{
+  text-align: center;
+}
+
+#title{
+  text-align: right;
+  margin-right: 10%;
+}
+
+button{
+  color: red;
+  width: 80px;
+  border-radius: 5px;
+}
+
+button:hover{
+  color:white;
+  background-color: red;
 }
