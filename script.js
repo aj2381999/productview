@@ -96,6 +96,12 @@ function addToCart(item){
 //9.delete function for the items added in the List
 function del(item){
   document.getElementById(item).remove();
+  const targetDivs=document.getElementById("ctitle");
+  if(targetDivs.style.display === "none"){
+    targetDivs.style.display ="block";
+  }else{
+    targetDivs.style.display ="none";
+  }
   alert("Item Removed");
 }
 
